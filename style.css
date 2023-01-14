@@ -1,0 +1,104 @@
+
+/* change box-model to include dimensions in total size (padding, border, margin) */
+* {
+    box-sizing:border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* show border lines */
+div {
+    
+}
+
+/* calculator body */
+div#calculatorBody {
+
+    border: 3px solid black;
+
+    height: fit-content;
+    width: fit-content;
+
+    margin: 50px auto;
+
+    background-color: #404040;
+
+}
+
+/* calculator screen (container) */
+div#calcScreen {
+
+
+}
+
+/*  calculator screen (element) */
+input {
+
+    display: block;
+
+    /* size */
+    height: 75px;
+    width: 97%;
+    font-size: 30px;
+
+    /* center screen */
+    margin: 0 auto;
+
+    margin: 15px 10px 0 5px;
+    text-align: right;
+
+    color: white;
+    font-weight: bold;
+    
+
+    border: 1px solid white;
+    background-color: #404040;
+
+}
+
+/* Remove increment/decrement arrows from input box (Chrome, Safari, Edge, Opera) */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/* calculator buttons (container) */
+div#calcButtons {
+
+    display: grid;
+    justify-content: center;
+    gap: 1.0px 1.5px;
+
+    /* define number of columns */
+    grid-template-columns: repeat(4, 90px);
+
+    /* define number of rows */
+    grid-template-rows: repeat(5, 70px);
+
+    margin: 25.0px 7.0px 7.0px 7.0px;
+}
+
+.button {
+
+    border-radius: 10.0px;
+    font-size: 18px;
+
+    background-color: 	#808080;
+    color: white;
+    opacity: .9;
+
+}
+
+button[name ="equal"] {
+
+    background-color:gold;
+}
+
+button:hover {
+
+    background-image: linear-gradient(rgb(0 0 0/25%) 0 0);
+}
