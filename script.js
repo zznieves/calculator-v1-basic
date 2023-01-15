@@ -188,7 +188,7 @@ function handleButtonClick(buttonIndex) {
         return;
     }
     // if backspace button was clicked 
-    else if(buttons[buttonIndex].textContent === '<<') {
+    else if(buttons[buttonIndex].textContent === 'BS') {
 
         backSpaceClicked();
         return;
