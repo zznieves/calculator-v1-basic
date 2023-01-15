@@ -188,7 +188,11 @@ function handleButtonClick(buttonIndex) {
         return;
     }
     // if backspace button was clicked 
+<<<<<<< HEAD
     else if(buttons[buttonIndex].textContent === '\u232B') {
+=======
+    else if(buttons[buttonIndex].textContent === 'BS') {
+>>>>>>> 23b00af8412296ec713265d260aeca299510ed80
 
         backSpaceClicked();
         return;
