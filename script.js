@@ -78,7 +78,7 @@ function calculate() {
             answer = num1 * num2;
             break;
         // division
-        case '÷':
+        case '\u00F7':
             answer = num1 / num2;
             break;
         default:
@@ -188,7 +188,7 @@ function handleButtonClick(buttonIndex) {
         return;
     }
     // if backspace button was clicked 
-    else if(buttons[buttonIndex].textContent === '←') {
+    else if(buttons[buttonIndex].textContent === '\u232B') {
 
         backSpaceClicked();
         return;
@@ -202,7 +202,7 @@ function handleButtonClick(buttonIndex) {
 
     }
     // if an operator button was clicked
-    else if((buttons[buttonIndex].textContent === '+') || (buttons[buttonIndex].textContent === '-') || (buttons[buttonIndex].textContent === 'x') || (buttons[buttonIndex].textContent === '÷')) {
+    else if((buttons[buttonIndex].textContent === '+') || (buttons[buttonIndex].textContent === '-') || (buttons[buttonIndex].textContent === 'x') || (buttons[buttonIndex].textContent === '\u00F7')) {
 
         operatorClicked(buttonIndex);
         return;
